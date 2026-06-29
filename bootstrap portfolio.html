@@ -1,0 +1,253 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leela Kumari | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4eKJM3yQREg5hGCM6Qz2uP8jrZfATcn5KzI4YvE3Xi8P1wZ2rQKAC25Xy1oF8kMK" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: #f0f4ff;
+        color: #1f2937;
+        scroll-behavior: smooth;
+      }
+      .navbar {
+        background: rgba(15, 23, 42, 0.95);
+        box-shadow: 0 12px 25px rgba(15, 23, 42, 0.1);
+      }
+      .navbar-brand {
+        font-weight: 700;
+        letter-spacing: 0.05em;
+      }
+      .hero {
+        min-height: 88vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
+        color: #ffffff;
+      }
+      .hero .btn-primary {
+        background: #ffffff;
+        color: #1d4ed8;
+        border: none;
+        padding: 0.95rem 1.75rem;
+        font-weight: 600;
+      }
+      .hero .btn-primary:hover {
+        background: #e2e8f0;
+        color: #1d4ed8;
+      }
+      .hero h1 {
+        font-size: clamp(2.5rem, 5vw, 4.25rem);
+        letter-spacing: -0.04em;
+      }
+      .hero p {
+        max-width: 520px;
+        color: #dbeafe;
+      }
+      .hero-card {
+        background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.18);
+        backdrop-filter: blur(12px);
+      }
+      .section-title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      .section-title::after {
+        content: '';
+        width: 70px;
+        height: 4px;
+        background: #2563eb;
+        display: block;
+        margin-top: 0.75rem;
+        border-radius: 999px;
+      }
+      .card {
+        border: none;
+        border-radius: 1rem;
+      }
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 24px 50px rgba(15, 23, 42, 0.12);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .project-card img {
+        height: 260px;
+        object-fit: cover;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+      .skill-pill {
+        display: inline-block;
+        margin: 0.25rem;
+        padding: 0.75rem 1.1rem;
+        border-radius: 999px;
+        background: #eff6ff;
+        color: #1e40af;
+        font-weight: 600;
+      }
+      .contact-card {
+        background: #1d4ed8;
+        border: none;
+        color: #fff;
+      }
+      .contact-card a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .contact-card a:hover {
+        text-decoration: underline;
+      }
+      footer {
+        background: #0f172a;
+      }
+      footer small {
+        color: #cbd5e1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container py-3">
+        <a class="navbar-brand text-white" href="#home">Leela Kumari</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link text-white active" aria-current="page" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <span class="badge bg-white text-primary mb-3 px-4 py-2">Web Developer</span>
+            <h1>Hi, I am Leela Kumari</h1>
+            <p class="lead">I build modern, responsive websites using Bootstrap, HTML, and CSS. My work is clean, user-friendly, and ready for mobile, tablet, and desktop screens.</p>
+            <a class="btn btn-primary btn-lg" href="#projects">See My Work</a>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="hero-card rounded-4 p-4 shadow-lg text-center">
+              <img src="https://via.placeholder.com/520x360.png?text=Creative+Portfolio+Image" class="img-fluid rounded-4 mb-4" alt="Portfolio banner">
+              <h5 class="text-white mb-2">Beautiful Bootstrap Layout</h5>
+              <p class="text-white-75 mb-0">Attractive sections, cards, and clear branding for a professional portfolio look.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="section-title">About Me</h2>
+            <p class="lead text-muted">I am a web developer from Tirunelveli who enjoys turning ideas into real websites. I specialize in creating responsive and modern portfolio pages that present your skills and projects beautifully.</p>
+            <p>I have experience designing websites with Bootstrap and writing clean HTML and CSS. I enjoy making websites that look good on every device.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="card shadow-sm p-4">
+              <div class="card-body">
+                <h5 class="card-title">Quick Facts</h5>
+                <p class="card-text">Based in Tirunelveli, available for freelance or full-time work.</p>
+                <p class="mb-0"><strong>Email:</strong> <a href="mailto:leelakumarileelakumari49@gmail.com">leelakumarileelakumari49@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Projects</h2>
+          <p class="text-muted">A few examples of my recent work. Replace these with your own project information.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 shadow-sm">
+              <img src="https://via.placeholder.com/600x400.png?text=Project+One" class="card-img-top" alt="Project 1">
+              <div class="card-body">
+                <h5 class="card-title">Project One</h5>
+                <p class="card-text">A responsive landing page built with Bootstrap and custom CSS.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 shadow-sm">
+              <img src="https://via.placeholder.com/600x400.png?text=Project+Two" class="card-img-top" alt="Project 2">
+              <div class="card-body">
+                <h5 class="card-title">Project Two</h5>
+                <p class="card-text">A small business website with a clean modern layout.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 shadow-sm">
+              <img src="https://via.placeholder.com/600x400.png?text=Project+Three" class="card-img-top" alt="Project 3">
+              <div class="card-body">
+                <h5 class="card-title">Project Three</h5>
+                <p class="card-text">A portfolio gallery showcasing design work and case studies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Skills</h2>
+          <p class="text-muted">Tools and technologies I use regularly.</p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <span class="skill-pill">Bootstrap</span>
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Responsive Design</span>
+          <span class="skill-pill">UI Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2 class="section-title text-white">Contact</h2>
+            <p class="text-white-75">Want to work together? Send me a message and I’ll get back to you soon.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+            <a href="mailto:leelakumarileelakumari49@gmail.com" class="btn btn-light btn-lg">Email Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 text-center text-white">
+      <div class="container">
+        <small>© 2026 Leela Kumari. Built with Bootstrap.</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-g8OGoX5cVp2OWj9RPLk50I6EWmPTQYfJyH2y6QpGzbi8f4N6xgp4z81xQK7k+r2L" crossorigin="anonymous"></script>
+  </body>
+</html>
